@@ -13,7 +13,7 @@ const initialState = {
 }
 
 const cors =
-  process.env.NODE_ENV !== 'production'
+  process.env.NODE_ENV !== 'production' && process.env.REACT_APP_GOOGLE_API_WITH_CORS === 'true'
     ? 'https://cors-anywhere.herokuapp.com/'
     : ''
 
